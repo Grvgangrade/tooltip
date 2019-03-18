@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{
+    background: rgb(212, 209, 209);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: visible;
+  width: auto;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent white transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  
+}
+
+.tooltipcontent{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contentabove , .contentbelow, .scorecontainer{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 15px;
+    padding: 15px 0;
+    text-align: left;
+}
+
+.scorecontainer {
+    float: left;
+    border-right: 1px solid rgb(212, 209, 209);
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.playerinfo .playertable  tr  {
+    font-weight: bold;
+    font-size: 13px;
+    padding-bottom: 10px;
+
+}
+
+.tooltip-item {
+    padding: 0 15px 0 5px;
+    border-right: 1px solid rgb(212, 209, 209);
+}
+
+.tooltip-item p{
+    margin: 0;
+    padding:2px 0;
+    color: rgb(121, 110, 110);
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+
+.tooltip-item:last-child {
+    border: none;
+    padding-right: 0;
+}
+
+.tooltip-item span{
+    font-size: 15px;
+}
+
+.tooltip-item strong{
+    font-size: 20px;
+}
+
+.contentabove {
+    border-bottom: 1px solid rgb(212, 209, 209);
+}
+
+
+</style>
+<body>
+
+<h2>Right Tooltip w/ Left Arrow</h2>
+
+<div class="tooltip">Hover over me
+  <div class="tooltiptext">
+    <div class="tooltipcontent">
+        <ul class="contentabove">
+            <li class="tooltip-item">
+                <p>Speed</p>
+                <span><strong>190</strong>KPH</span>
+            </li>
+
+            <li class="tooltip-item">
+                <p>Spin</p>
+                <span><strong>190</strong>KPH</span>
+            </li>
+
+            <li class="tooltip-item">
+                <p>Height Above asdjka asdkkjh</p>
+                <span><strong>190</strong>KPH</span>
+            </li>
+            <li class="tooltip-item">
+                    <p>Pace</p>
+                    <span><strong>190</strong>KPH</span>
+            </li>
+            
+        </ul>
+
+        <div class="scorecontainer">
+            <div class="playerinfo">
+                <table class="playertable">
+                    <tr>
+                        <td>Nadal</td>
+                    </tr>
+                    <tr>
+                        <td>Federer</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="score">
+                <table class="scoretable">
+                    <tr>
+                        <td>6</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>4</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+        <ul class="contentbelow">
+
+            <li class="tooltip-item">
+                <p>Players</p>
+                <span><strong>190</strong>KPH</span>
+            </li>
+
+            <li class="tooltip-item">
+                    <p>Height Above asdjka asdkkjh</p>
+                    <span><strong>190</strong>KPH</span>
+            </li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
