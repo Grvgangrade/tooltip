@@ -36,37 +36,19 @@ body{
   border-style: solid;
   border-color: transparent white transparent transparent;
 }
-.tooltip:hover .tooltiptext {
-  
-}
 
 .tooltipcontent{
     width: 100%;
     margin: 0 auto;
 }
 
-.contentabove , .contentbelow, .scorecontainer{
+.contentabove , .contentbelow{
     list-style-type: none;
     display: flex;
     flex-wrap: nowrap;
     margin: 0 15px;
     padding: 15px 0;
     text-align: left;
-}
-
-.scorecontainer {
-    float: left;
-    border-right: 1px solid rgb(212, 209, 209);
-    margin: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-
-}
-.playerinfo .playertable  tr  {
-    font-weight: bold;
-    font-size: 13px;
-    padding-bottom: 10px;
-
 }
 
 .tooltip-item {
@@ -99,6 +81,94 @@ body{
     border-bottom: 1px solid rgb(212, 209, 209);
 }
 
+* {
+    box-sizing: border-box;
+}
+
+.match{
+    min-width:150px;
+    max-width: 350px;
+}
+
+.match .player-bar {
+    min-height: 34px;
+}
+
+.match .player-bar:first-child{
+    border-bottom: 1px solid black;
+}
+
+.match .player-bar .name {
+    display: inline;
+    vertical-align: middle;
+    overflow: hidden;
+    padding-right: 25px;
+    white-space: nowrap;
+    top: 2px;
+    font-family: 'Hind', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 34px;
+    font-weight: 600;
+}
+
+.match .player-bar ul.scores {
+    float: right;
+    min-height: 34px;
+    width: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+.match .player-bar ul.scores li {
+    line-height: 35px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 11px;
+    min-width: 18px;
+    text-align: center;
+    border-right: 1px solid black;
+}
+
+.scores:last-child{
+    border: none;
+}
+
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+/* .scorecontainer{
+    width: auto;
+    float: left;
+}
+
+.scorecontainer .playerinfo{
+    display: block;
+}
+
+.scorecontainer .playerinfo .name{
+    padding : 2px 25px 2px 10px;
+    float: left;
+}
+
+.scorecontainer .playerinfo .scores{
+    list-style: none;
+}
+
+.scorecontainer .playerinfo .scores li{
+    float:left;
+    padding: 3px;
+}  */
+
 
 </style>
 <body>
@@ -127,37 +197,31 @@ body{
                     <p>Pace</p>
                     <span><strong>190</strong>KPH</span>
             </li>
-            
         </ul>
 
-        <div class="scorecontainer">
-            <div class="playerinfo">
-                <table class="playertable">
-                    <tr>
-                        <td>Nadal</td>
-                    </tr>
-                    <tr>
-                        <td>Federer</td>
-                    </tr>
-                </table>
+        <div class="match">
+            <div class="player-bar">
+                <div class="name"><span>K. Samrejasjdkaj asj</span></div>
+                <ul class="scores clearfix">
+                    <li class="set-won"><span>6</span></li>
+                    <li class=""><span>3</span></li>
+                    <li class=""><span>3</span></li>
+                    <li class=""><span>3</span></li>
+                   
+                </ul>
             </div>
-            <div class="score">
-                <table class="scoretable">
-                    <tr>
-                        <td>6</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>4</td>
-                    </tr>
-
-                </table>
+            <div class="player-bar ">            
+                <div class="name"><span>J. Otico</span></div>
+                <ul class="scores clearfix">
+                    <li class=""><span>4</span></li>
+                    <li class="set-won"><span>6</span></li>
+                    <li class="set-won"><span>7</span></li>
+                    <li class=""><span>3</span></li>
+                </ul>
             </div>
-        </div>
+        </div>     
 
         <ul class="contentbelow">
-
             <li class="tooltip-item">
                 <p>Players</p>
                 <span><strong>190</strong>KPH</span>

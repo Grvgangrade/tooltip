@@ -1,0 +1,148 @@
+body{
+    background: rgb(212, 209, 209);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: visible;
+  width: auto;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10%;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent white transparent transparent;
+}
+
+.tooltipcontent{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contentabove {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.contentbelow{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: left;
+}
+
+.tooltip-item {
+    padding: 0 15px 0 5px;
+    border-right: 1px solid rgb(212, 209, 209);
+}
+
+.tooltip-item:first-child {
+    padding-left: 0px;
+}
+
+.contentabove p{
+    margin: 0;
+    padding:2px 0;
+    color: rgb(121, 110, 110);
+    font-size: 13px;
+    padding-bottom: 5px;
+    white-space: nowrap;
+}
+
+.contentbelow p{
+    margin: 0;
+    padding:4px 0;
+    color: rgb(121, 110, 110);
+    font-size: 15px;
+    padding-bottom: 5px;
+    white-space: nowrap;
+}
+
+.tooltip-item:last-child {
+    border: none;
+    padding-right: 0;
+}
+
+.tooltip-item span{
+    font-size: 15px;
+}
+
+.tooltip-item strong{
+    font-size: 20px;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* new css */
+
+.score-table{
+    padding: 0px !important;
+}
+
+.contentbelow .match-player{
+    font-weight: bold;
+}
+
+.table-body tr{
+    border-bottom: 1px solid rgb(212, 209, 209);
+}
+
+.table-body .set-score{
+    font-weight: bold;
+}
+
+.border-partition{
+    border-bottom: 1px solid rgb(212, 209, 209);
+}
+
+table {
+    border-collapse: collapse;
+  }
+  
+.table-body td {
+    border-right: 1px solid rgb(212, 209, 209);
+    padding: 5px 5px 6px 5px;
+  }
+  .table-body td:first-child{
+      border-right: none;
+  }
+
+  .table-body tr:last-child {
+    border-bottom: none;
+  }
+
+  .hand{
+      padding: 5px 3px;
+      margin-top: 5px;
+      border: 1px solid red;
+      border-radius: 3px;
+      color: red;
+      white-space: nowrap;
+  }
